@@ -1,0 +1,57 @@
+{
+  "name": "blyx-bunting",
+  "displayName": "Blyx Bunting",
+  "description": "Publish a distribution as a standalone HTML table with interval labels, counts and meters. Reuse the same bin definitions in reports and tests.",
+  "version": "0.1.0",
+  "publisher": "RahulChaube",
+  "license": "(MIT OR Apache-2.0)",
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "blyx",
+    "bunting",
+    "framework"
+  ],
+  "homepage": "https://www.blyx-lang.space/packages/bunting",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rahulchaube1/blyx-bunting.git",
+    "directory": "editor"
+  },
+  "bugs": {
+    "url": "https://github.com/Rahulchaube1/blyx-bunting/issues"
+  },
+  "extensionDependencies": [
+    "RahulChaube.blyx-language"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "blyx",
+        "path": "./snippets/framework.json"
+      }
+    ],
+    "walkthroughs": [
+      {
+        "id": "bunting.start",
+        "title": "Get started with Bunting",
+        "description": "Publish a distribution as a standalone HTML table with interval labels, counts and meters. Reuse the same bin definitions in reports and tests.",
+        "steps": [
+          {
+            "id": "run",
+            "title": "Run the Bunting example",
+            "description": "Create an empty .blyx file, insert blyx-bunting-demo and choose **Blyx: Run File**.\n[Open the documentation](https://www.blyx-lang.space/packages/bunting)",
+            "media": {
+              "markdown": "walkthrough.md"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

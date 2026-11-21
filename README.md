@@ -1,10 +1,14 @@
-<img src="assets/logo.png" width="112" height="112" alt="Bunting bird logo">
+<img src="assets/logo.png" width="112" height="112" alt="A painted bunting with a cobalt head, red breast and green wing.">
 
 # Blyx Bunting
 
 Publish a distribution as a standalone HTML table with interval labels, counts and meters. Reuse the same bin definitions in reports and tests.
 
 A colored chart alone can hide values from people navigating with assistive technology. W3C’s table guidance pairs data cells with headers. Bunting emits row and column headers and prints the count alongside every meter. [W3C WAI, Tables with One Header](https://www.w3.org/WAI/tutorials/tables/one-header/)
+
+## Editor extension
+
+Install **RahulChaube.blyx-bunting** to run the worked example and use the framework’s function completions in a Blyx file. Open an empty `.blyx` file, enter `blyx-bunting-demo`, then choose **Blyx: Run File**. [Editor downloads](https://www.blyx-lang.space/packages/bunting#editor) · [Download the extension](https://github.com/Rahulchaube1/blyxxxx/releases/download/framework-editors-v0.1.0/blyx-bunting-0.1.0.vsix) · [Starter with framework source](https://github.com/Rahulchaube1/blyxxxx/releases/download/framework-editors-v0.1.0/blyx-bunting-starter-0.1.0.zip)
 
 ## Install and run
 

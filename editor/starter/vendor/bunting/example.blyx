@@ -1,0 +1,9 @@
+use bunting;
+
+fn main() {
+    let waits = [0, 4, 5, 8, 10, 12];
+    let edges = [5, 10];
+    println!(bu_count(waits, edges, 0));
+    println!(bu_count(waits, edges, 1));
+    println!(bu_count(waits, edges, 2));
+}

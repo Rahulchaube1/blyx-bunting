@@ -1,0 +1,7 @@
+use bunting;
+fn main() {
+    println!("<!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><title>Support queue waits</title>");
+    println!("<main><h1>Support queue waits</h1><p>Minutes from a ticket opening to its first reply.</p>");
+    bu_table([0, 2, 5, 5, 7, 10, 18, 25], [5, 10, 20]);
+    println!("</main></html>");
+}

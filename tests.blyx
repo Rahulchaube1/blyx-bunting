@@ -1,0 +1,20 @@
+use std::cli;
+use bunting;
+
+fn check(ok: bool, label: str) {
+    if !ok { stderr_line(label); process_exit(1); }
+}
+
+fn main() {
+    let edges = [1, 3];
+    let input = [-1, 1, 2, 3];
+    check(bu_bucket(edges, 1.0) == 1 && bu_bucket(edges, 3.0) == 2, "half-open boundaries");
+    check(bu_count(input, edges, 0) == 1 && bu_count(input, edges, 1) == 2 && bu_count(input, edges, 2) == 1, "partition");
+    check(bu_count([], [], 0) == 0 && bu_count([2], [], 0) == 1, "no edges");
+    check(bu_count(input, [1, 1], 0) == -1 && !bu_table(input, [2, 1]), "invalid edges rejected before rendering");
+    check(bu_count(input, edges, -2) == -1 && bu_count(input, edges, 3) == -1, "invalid bucket");
+    let infinity = 1.0e300 * 1.0e300;
+    check(!bu_valid([infinity]) && bu_count([infinity, 2, infinity - infinity], [], -1) == 2, "non-finite data");
+    check(bu_count(input, edges, -1) == 0, "all inputs accounted for");
+    println!("bunting checks passed");
+}
